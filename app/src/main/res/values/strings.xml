@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">IndPrjct1</string>
+    <string name="splashBtnTxt">Log In/Register</string>
+    <string name="lgnString">Log In</string>
+    <string name="rgstrString">Register</string>
+    <string name="usernameString">username:</string>
+    <string name="psswrdString">password:</string>
+    <string name="fnString">First Name:</string>
+    <string name="lnString">Last Name:</string>
+    <string name="dbString">Date of Birth:</string>
+    <string name="emailString">Email:</string>
+    <!--suppress AndroidDomInspection -->
+    <string name="eMailVal">@</string>
+    <string name="eMailVal2">.com</string>
+</resources>

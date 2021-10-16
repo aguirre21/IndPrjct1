@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LgnRgstr">
+
+    //username text
+    <TextView
+        android:id="@+id/lgnTxt"
+        android:text="@string/usernameString"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    //username text input
+    <EditText
+        android:id="@+id/lgnEdit"
+        android:maxLines="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/lgnTxt"
+        app:layout_constraintBaseline_toBaselineOf="@id/lgnTxt" />
+
+    //password text
+    <TextView
+        android:id="@+id/psswrdTxt"
+        android:text="@string/psswrdString"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/lgnTxt"
+        app:layout_constraintTop_toBottomOf="@id/lgnTxt" />
+
+    //password text input
+    <EditText
+        android:id="@+id/psswrdEdit"
+        android:maxLines="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/lgnTxt"
+        app:layout_constraintBaseline_toBaselineOf="@id/psswrdTxt"/>
+
+    //log in button
+    //uses logInAction fuct to save the data in the fields
+    <Button
+        android:id="@+id/lgnBtn"
+        android:onClick="logInAction"
+        android:text="@string/lgnString"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/psswrdEdit" />
+
+    //registration button
+    //moves on to registrationActivity
+    <Button
+        android:id="@+id/rgstrBtn"
+        android:onClick="registerAction"
+        android:text="@string/rgstrString"
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

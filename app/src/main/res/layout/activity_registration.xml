@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".registrationActivity">
+
+    //first name text
+    <TextView
+        android:id="@+id/fn_View"
+        android:text="@string/fnString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    //first name input
+    <EditText
+        android:id="@+id/fn_Edit"
+        android:maxLines="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/fn_View"
+        app:layout_constraintBaseline_toBaselineOf="@id/fn_View"/>
+
+    //last name text
+    <TextView
+        android:id="@+id/ln_View"
+        android:text="@string/lnString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="3dp"
+        app:layout_constraintLeft_toLeftOf="@id/fn_View"
+        app:layout_constraintTop_toBottomOf="@id/fn_View"/>
+
+    //last name input
+    <EditText
+        android:id="@+id/ln_Edit"
+        android:maxLines="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/fn_Edit"
+        app:layout_constraintBaseline_toBaselineOf="@id/ln_View"/>
+
+    //date of birth text
+    <TextView
+        android:id="@+id/db_View"
+        android:text="@string/dbString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="3dp"
+        app:layout_constraintLeft_toLeftOf="@id/fn_View"
+        app:layout_constraintTop_toBottomOf="@id/ln_View"/>
+
+    //date of birth input
+    <EditText
+        android:id="@+id/db_Edit"
+        android:maxLines="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/fn_Edit"
+        app:layout_constraintBaseline_toBaselineOf="@id/db_View"/>
+
+    //email text
+    <TextView
+        android:id="@+id/email_View"
+        android:text="@string/emailString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="3dp"
+        app:layout_constraintLeft_toLeftOf="@id/fn_View"
+        app:layout_constraintTop_toBottomOf="@id/db_View"/>
+
+    //email input
+    <EditText
+        android:id="@+id/email_Edit"
+        android:maxLines="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/fn_Edit"
+        app:layout_constraintBaseline_toBaselineOf="@id/email_View"/>
+
+    //password text
+    <TextView
+        android:id="@+id/psswrd_View"
+        android:text="@string/psswrdString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="3dp"
+        app:layout_constraintLeft_toLeftOf="@id/fn_View"
+        app:layout_constraintTop_toBottomOf="@id/email_View"/>
+
+    //password input
+    <EditText
+        android:id="@+id/psswrd_Edit"
+        android:maxLines="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/fn_Edit"
+        app:layout_constraintBaseline_toBaselineOf="@id/psswrd_View"/>
+
+    //completes the registration
+    //goes back to the log in screen
+    <Button
+        android:id="@+id/completed_Btn"
+        android:text="@string/rgstrString"
+        android:onClick="cmplt_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
